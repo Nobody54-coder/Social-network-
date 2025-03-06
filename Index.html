@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Social App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="firebase-config.js" type="module"></script>
+    <script defer src="script.js" type="module"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <h1>🔥 My Social App</h1>
+        <button onclick="logout()">Logout</button>
+    </nav>
+
+    <!-- Post Something -->
+    <div id="createPost">
+        <textarea id="postInput" placeholder="What's on your mind?"></textarea>
+        <button onclick="createPost()">Post</button>
+    </div>
+
+    <!-- News Feed -->
+    <h2>News Feed</h2>
+    <div id="feed"></div>
+
+    <!-- Video Upload -->
+    <h2>Upload Video</h2>
+    <input type="file" id="videoUpload">
+    <button onclick="uploadVideo()">Upload</button>
+    <div id="videos"></div>
+
+    <!-- Real-Time Chat -->
+    <h2>Chat</h2>
+    <input type="text" id="messageInput" placeholder="Type a message...">
+    <button onclick="sendMessage()">Send</button>
+    <div id="messages"></div>
+</body>
+</html>
